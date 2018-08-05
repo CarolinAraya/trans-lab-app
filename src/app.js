@@ -3,12 +3,11 @@ const bipKeyInput = document.getElementById("key-bip");
 const responseContainer = document.getElementById("response-container");
 let bipKeyInputValue;
 
-form.addEventListener('submit', (e) => {
-    e.preventDefault();
+getResidue = () => {
     responseContainer.innerHTML = '';
     bipKeyInputValue = bipKeyInput.value;
     getResidueFromApi();
-});
+}
 
 getResidueFromApi = () => {
     $.ajax({

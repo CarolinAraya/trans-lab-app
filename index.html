@@ -6,22 +6,56 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="src/style.css">
 </head>
 
 <body>
-    <div class="container">
+    <div class="container-fluid">
+        <header class="header row">
+            <div class="col-10">
+                <h4>TRANS-LAB</h4>
+            </div>
+        </header>
+        <!-- Obtener Saldo -->
         <div class="row">
-            <form id="get-residue-bip">
-                <input id="key-bip" type="text" placeholder="Ingresa código de tu bip...">
-                <input id="button-get-residue" type="submit" value="Submit">
-            </form>
+            <div class="col">
+                <section class="get-residue-section">
+                    <div class="row">
+                        <div class="form-group">
+                            <input id="key-bip" class="form-control" type="text" placeholder="Ingrese código bip...">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <select class="custom-select" id="inputGroupSelect01">
+                            <option selected>Choose...</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                        </select>
+                    </div>
+                    <div class="row btn-get-residue">
+                        <div>
+                            <input id="button-get-residue" class="btn btn-warning" type="button" onclick="getResidue()" value="VER SALDO">
+                        </div>
+                    </div>
+
+
+                </section>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <div id="response-container" class="hidden">
+                    <p>Saldo Total</p>
+                </div>
+            </div>
         </div>
     </div>
-    <div class="container">
-        <div class="row">
-            <div id="response-container"></div>
-        </div>
-    </div>
+
+
+
 
     <!-- FIREBASE -->
     <script src="https://www.gstatic.com/firebasejs/5.3.1/firebase.js"></script>
@@ -37,10 +71,14 @@
         };
         firebase.initializeApp(config);
     </script>
-    
-    <!-- MY LINKS AND JQUERY -->
+
+
     <script src="src/app.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
