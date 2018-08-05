@@ -6,12 +6,14 @@ let bipKeyInputValue;
 form.addEventListener('submit', (e) => {
     e.preventDefault();
     responseContainer.innerHTML = '';
-    bipKeyInputValue = bipKeyForGetResidue.value;
+    bipKeyInputValue = bipKeyInput.value;
     getResidueFromApi();
 });
 
 getResidueFromApi = () => {
-    const residueBipRequest = new XMLHttpRequest();
-    residueBipRequest.open('GET', `http://bip-servicio.herokuapp.com/api/v1/solicitudes.json?bip=${bipKeyInputValue}`);
+    $.ajax({
+        url: `http://bip-servicio.herokuapp.com/api/v1/solicitudes.json?bip=${bipKeyInputValue}`
+    }).done(data => {
+        console.log(data);
+    });
 }
-
