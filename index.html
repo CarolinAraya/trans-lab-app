@@ -13,8 +13,7 @@
 
 <body>
 
-    <!-- Loggin -->
-    <div id="login" class="container-login">
+   <!--  <div id="login" class="container-login">
         <div class="row">
             <div class="col">
                 <div class="image-container">
@@ -33,18 +32,21 @@
                 <div class="password col-12">
                         <input type="password" maxlength="8" class="form-control" placeholder="contraseña" aria-label="Username" aria-describedby="basic-addon1">
                 </div>
+                <div id="passwordRegister" class="password col-12 hidden">
+                        <input type="password" maxlength="8" class="form-control" placeholder="contraseña" aria-label="Username" aria-describedby="basic-addon1">
+                </div>
                 <div>
-                    <button class="btn btn-warning btn-sm btn-login">INICIAR SESIÓN</button>
+                    <button class="btn btn-warning btn-sm btn-login" onclick="showPerfilPage()">INICIAR SESIÓN</button>
                 </div>
                 <div class="left-clas">
-                    <button onclick="register()" >REGISTRATE</button>
+                    <button onclick="showRegisterPage()" >REGISTRATE</button>
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
 
     <!-- Logged In -->
-    <div id="logged" class="container logged-none">
+    <div id="logged" class="container ">
         <!-- Sidebar -->
         <div class="pos-f-t">
             <nav class="navbar navbar-dark bg-dark">
@@ -153,6 +155,7 @@
     <script src="src/app/getResidue.js"></script>
     <script src="src/app/addBip.js"></script>
     <script src="src/app/style.js"></script>
+    <script src="src/app/register.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
         crossorigin="anonymous"></script>

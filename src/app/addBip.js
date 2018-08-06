@@ -13,11 +13,6 @@ const addBip = () => {
     codeBip = codeBipInput.value;
     myBip.codeBip = codeBip;
     saveBipFirebase(myBip);
-    const bipContainer = document.createElement('div');
-    containerBips.appendChild(bipContainer)
-    bipContainer.innerHTML += `<div class="bip-code">
-                                <p>${myBip.codeBip}</p>    
-                               </div>`
 }
 
 const saveBipFirebase = () => {

@@ -20,10 +20,20 @@ function closeMenu() {
 function showPerfilPage() {
     $('#getResidueApp').hide();
     $('#perfilApp').show();
+    $('#logged').show();
+
   }
   
   function showGetResiduePage() {
     $('#perfilApp').hide();
     $('#getResidueApp').show();
   }
+
+  function showRegisterPage() {
+    //$('#login').hide();
+    $('#passwordRegister').show();
+    register();
+  }
+
+ 
  

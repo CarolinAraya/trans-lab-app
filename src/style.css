@@ -1,8 +1,12 @@
-/* Login */
+/*
 .container-login{
     background-color: #3e3f41;
     height: 100vh;
     width: 100vw;
+}
+
+.hidden{
+    display: none;
 }
 
 .left-clas{
@@ -35,7 +39,7 @@ h1 {
 }
 .mb-3, .my-3  {
     margin-left: 33px;
-}
+} */
 /* SIDEBAR */
 
 .menu{
@@ -127,9 +131,9 @@ h6{
     display: none;
 }
 
-.logged-none{
+/* .logged-none{
     display: none;
-}
+} */
 
 .perfil-photo{
     background-color: #ffc107;
