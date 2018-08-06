@@ -1,4 +1,41 @@
+/* Login */
+.container-login{
+    background-color: #3e3f41;
+    height: 100vh;
+    width: 100vw;
+}
 
+.left-clas{
+    margin: 15px 28px 11px 84px;
+}
+
+.btn-login{
+    margin: 20px 88px 0px 74px;
+}
+
+.logo{
+    margin-bottom: 35px;
+}
+
+img {
+    width: 150px;
+}
+
+.image-container{
+margin: 85px 0px 35px 103px;
+}
+
+h1 {
+    font-family: fantasy;
+    color: #ffc107;
+    text-align: center;
+}
+.password{
+    margin-left: 33px;
+}
+.mb-3, .my-3  {
+    margin-left: 33px;
+}
 /* SIDEBAR */
 
 .menu{
@@ -76,17 +113,21 @@ h6{
     border-color: #ffc107;
 }
 .input-add-bip {
-    margin: 15px 28px 11px 19px;;
+    margin: 15px 28px 11px 19px;
 }
 
 .btn-add-bip{
-    margin: 0px 88px 0px 74px;
+    margin: 20px 88px 0px 74px;
 }
 
 .get-residue-none{
     display: none;
 }
 .perfil-add-bip-none{
+    display: none;
+}
+
+.logged-none{
     display: none;
 }
 

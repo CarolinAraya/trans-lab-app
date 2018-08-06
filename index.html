@@ -12,7 +12,39 @@
 </head>
 
 <body>
-    <div class="container">
+
+    <!-- Loggin -->
+    <div id="login" class="container-login">
+        <div class="row">
+            <div class="col">
+                <div class="image-container">
+                    <img src="assets/images/imagen.png" alt="">
+                </div>
+                <div class="logo">
+                    <h1>TRANS-LAB</h1>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-10">
+                <div class="input-group mb-3">
+                    <input id="emailUser" type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+                </div>
+                <div class="password col-12">
+                        <input type="password" maxlength="8" class="form-control" placeholder="contraseña" aria-label="Username" aria-describedby="basic-addon1">
+                </div>
+                <div>
+                    <button class="btn btn-warning btn-sm btn-login">INICIAR SESIÓN</button>
+                </div>
+                <div class="left-clas">
+                    <button onclick="register()" >REGISTRATE</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Logged In -->
+    <div id="logged" class="container logged-none">
         <!-- Sidebar -->
         <div class="pos-f-t">
             <nav class="navbar navbar-dark bg-dark">
@@ -67,46 +99,40 @@
                 </div>
             </div>
         </div>
+        <!-- Perfil + Agregar tarjeta -->
+        <div id="perfilApp" class="perfil-add-bip-none">
+            <!-- Perfil -->
+            <div class="row">
+                <div class="col-12">
+                    <div class="perfil-photo">
+                    </div>
+                </div>
+            </div>
+            <div class="row ">
+                <div class="col-10">
+                    <div class="email-perfil">
+                        <h6>email@hotmil.com</h6>
+                    </div>
+                </div>
+            </div>
+            <!-- Agregar Tarjeta -->
+            <div class="row input-add-bip">
+                <div class="col">
+                    <div class="input-group mb-3">
+                        <input id="add-bip" class="form-control" type="text" placeholder="Bip a ingresar...">
+                    </div>
+                </div>
+            </div>
+            <div class="row btn-add-bip">
+                <div class="col">
+                    <div>
+                        <input id="button-add-bip" class="btn btn-warning btn-sm " type="button" onclick="addBip()" value="AGREGAR TARJETA">
+                    </div>
+                </div>
+            </div>
+            <div id="containerBips"></div>
+        </div>
     </div>
-
-    <div id="perfilApp" class="perfil-add-bip-none">
-        <!-- Perfil -->
-        <div class="row">
-            <div class="col-12">
-                <div class="perfil-photo">
-                </div>
-            </div>
-        </div>
-        <div class="row ">
-            <div class="col-10">
-                <div class="email-perfil">
-                    <h6>email@hotmil.com</h6>
-                </div>
-            </div>
-        </div>
-        <!-- Agregar Tarjeta -->
-        <div class="row input-add-bip">
-            <div class="col">
-                <div class="input-group mb-3">
-                    <input id="add-bip" class="form-control" type="text" placeholder="Bip a ingresar...">
-                </div>
-            </div>
-        </div>
-        <div class="row btn-add-bip">
-            <div class="col">
-                <div>
-                    <input id="button-add-bip" class="btn btn-warning btn-sm " type="button" onclick="addBip()" value="AGREGAR TARJETA">
-                </div>
-            </div>
-        </div>
-        <div id="containerBips"></div>
-    </div>
-
-
-
-
-
-
 
     <!-- FIREBASE -->
     <script src="https://www.gstatic.com/firebasejs/5.3.1/firebase.js"></script>
