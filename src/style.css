@@ -1,5 +1,49 @@
+
+/* SIDEBAR */
+
+.menu{
+    position: absolute;
+    top:0;
+    height: 100vh; /* viewport height, usa el 100% de la altura de la pantalla*/
+    width: 90vw;  /* viewport width 90% del an*/
+    transition: 0.5s ease-out
+}
+
+.menu_closed{
+    left: -90vw;
+}
+
+.menu_open{
+    left: 0;
+    z-index: 2;
+}
+
+.close_button{ /* configurando boton de cierre del navbar*/
+    font-size: xx-large;
+    color: white;
+    position: absolute;
+    right: 10px;                   
+}
+
+.menu_content{
+    padding: 10px;
+    margin-top: 20px;
+}
+
+@media(min-width: 768px){ /* esta medida se encuentra en bootstrap-> overview-> responsive breakpoints */
+    .menu{
+        width: 20vw; /*El menú va a tomar este ancho con pantallas de 768px hacia arriba*/
+    }
+
+    .menu_closed{
+        left:-20vw;
+    }
+}
+
 body {
     background-color: #dddee0;
+    margin: 0%;
+    border: 0px;
 }
 
 h6{
