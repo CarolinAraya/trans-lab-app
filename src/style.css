@@ -21,3 +21,20 @@ h4 {
     margin-top: 25px;
     margin-left: 97px;
 }
+
+.input-key-bip{
+    margin-top: 50px;
+}
+
+.total-residue{
+    background-color: #ffc107;
+    margin: 0px 27px;
+    height: 116px;
+}
+
+.total-residue-title{
+    background-color: #3e3f41;
+    color: white;
+    text-align: center;
+    margin: 0px 27px;
+}

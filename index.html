@@ -13,17 +13,17 @@
 
 <body>
     <div class="container-fluid">
-        <header class="header row">
-            <div class="col-10">
+        <header class=" row">
+            <div class="col-12 header">
                 <h4>TRANS-LAB</h4>
             </div>
         </header>
         <!-- Obtener Saldo -->
         <div class="row">
-            <div class="col">
+            <div class="col-12">
                 <section class="get-residue-section">
-                    <div class="row">
-                        <div class="form-group">
+                    <div class="row input-key-bip">
+                        <div class="input-group mb-3">
                             <input id="key-bip" class="form-control" type="text" placeholder="Ingrese código bip...">
                         </div>
                     </div>
@@ -40,16 +40,13 @@
                             <input id="button-get-residue" class="btn btn-warning" type="button" onclick="getResidue()" value="VER SALDO">
                         </div>
                     </div>
-
-
                 </section>
             </div>
         </div>
-        <div class="row">
+        <div class="total-residue-title">SALDO TOTAL</div>
+        <div class="row total-residue">
             <div class="col">
-                <div id="response-container" class="hidden">
-                    <p>Saldo Total</p>
-                </div>
+                <div id="response-container"></div>
             </div>
         </div>
     </div>
