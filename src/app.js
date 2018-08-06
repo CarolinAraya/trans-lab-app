@@ -14,5 +14,8 @@ getResidueFromApi = () => {
         url: `http://bip-servicio.herokuapp.com/api/v1/solicitudes.json?bip=${bipKeyInputValue}`
     }).done(data => {
         console.log(data);
+        responseContainer.innerHTML= `<h1 class= "residue">${data.saldoTarjeta}</h1>`
     });
+
 }
+
