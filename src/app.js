@@ -19,7 +19,7 @@ getResidueFromApi = () => {
     }).done(data => {
         userBip.bip = data;
         responseContainer.innerHTML = `<h1 class= "residue">${data.saldoTarjeta}</h1>`
-        saveUserBip(userBip.bip);
+        saveUserBip(userBip);
     });
 }
 
