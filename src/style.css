@@ -4,7 +4,23 @@ h1 {
     color: #f6a800;
     font-family: fantasy;
     text-align: center;
-    margin-top: 15%;
+    margin-top: 6%;
+    margin-bottom: 12%
+}
+
+.btn {
+    border-radius: .0rem;
+    padding: 9px;
+}
+
+.password { 
+    margin-top: 0.115%;
+}
+
+.form-control {
+    border: 0px solid #ced4da;
+    border-radius: .0rem;
+    padding: 9px;
 }
 
 .logo {
@@ -116,7 +132,7 @@ h6{
     text-align: center;
 } 
 .btn-warning {
-    color: white;
+    color: #777777;
     background-color: #f6a800;
     border-color: #f6a800;
 }
