@@ -8,6 +8,22 @@ h1 {
     margin-bottom: 12%
 }
 
+.register {
+margin-top: 40px;
+}
+
+.a-register {
+    color: #f6a800;
+}
+
+.forgot-text-row {
+    margin-top: 1%;
+}
+
+.a-login {
+    color: #fafafa;
+}
+
 .btn {
     border-radius: .0rem;
     padding: 9px;
@@ -71,7 +87,7 @@ p {
     z-index: 2;
 }
 
-a{
+.a-nav{
     color: #f6a800;
 }
 
@@ -125,6 +141,7 @@ body {
 
 h6{
     text-align: center;
+    color: white;
 }
 .bip-code{
     background-color: white;
