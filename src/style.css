@@ -1,45 +1,49 @@
-/*
-.container-login{
+/* Log in */
+
+h1 {
+    color: #f6a800;
+    font-family: fantasy;
+    text-align: center;
+    margin-top: 15%;
+}
+
+.logo {
+    margin-top: 20%;
+}
+
+.log-in{
     background-color: #3e3f41;
     height: 100vh;
     width: 100vw;
 }
 
-.hidden{
+
+.login-page {
+    margin-top: 50px;
+}
+
+.register-page {
+    margin-top: 50px;
     display: none;
 }
 
-.left-clas{
-    margin: 15px 28px 11px 84px;
+p {
+    margin: 0;
+    color: #777777;
 }
 
-.btn-login{
-    margin: 20px 88px 0px 74px;
+.panel 
+{
+    margin-right: 5px;
 }
 
-.logo{
-    margin-bottom: 35px;
+.panel-body
+{
+    overflow-y: scroll;
+    height: 70%;
 }
 
-img {
-    width: 150px;
-}
 
-.image-container{
-margin: 85px 0px 35px 103px;
-}
-
-h1 {
-    font-family: fantasy;
-    color: #ffc107;
-    text-align: center;
-}
-.password{
-    margin-left: 33px;
-}
-.mb-3, .my-3  {
-    margin-left: 33px;
-} */
 /* SIDEBAR */
 
 .menu{
@@ -52,7 +56,7 @@ h1 {
 }
 
 a{
-    color: #ffc107;
+    color: #f6a800;
 }
 
 .navbar {
@@ -71,7 +75,7 @@ a{
 
 .close_button{ /* configurando boton de cierre del navbar*/
     font-size: xx-large;
-    color: #ffc107;
+    color: #f6a800;
     position: absolute;
     right: 10px;  
                     
@@ -113,8 +117,8 @@ h6{
 } 
 .btn-warning {
     color: white;
-    background-color: #ffc107;
-    border-color: #ffc107;
+    background-color: #f6a800;
+    border-color: #f6a800;
 }
 .input-add-bip {
     margin: 15px 28px 11px 19px;
@@ -131,12 +135,12 @@ h6{
     display: none;
 }
 
-/* .logged-none{
+.logged-none{
     display: none;
-} */
+}
 
 .perfil-photo{
-    background-color: #ffc107;
+    background-color: #f6a800;
     height: 188px;
     margin: 0px -30px 0px -30px;
 }
@@ -172,7 +176,7 @@ h4 {
 }
 
 .total-residue{
-    background-color: #ffc107;
+    background-color: #f6a800;
     margin: 0px 27px;
     height: 116px;
 }

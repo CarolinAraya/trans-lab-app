@@ -35,5 +35,23 @@ function showPerfilPage() {
     register();
   }
 
+  function showRegisterPage() {
+    $('#login-page').hide(); 
+    $('#perfil-page').hide(); 
+    $('#register-page').show();
+}
+
+function showPerfilPage() {
+    $('#login-page').hide(); 
+    $('#perfil-page').show(); 
+    $('#register-page').hide();
+}
+
+function showLoginPage() {
+    $('#login-page').show(); 
+    $('#perfil-page').hide(); 
+    $('#register-page').hide();
+}
+
  
  
