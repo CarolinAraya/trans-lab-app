@@ -35,14 +35,22 @@
                         </div>
                     </div>
                 </div>
+                <div id="registerPage" class="row register-none">
+                        <div class="col-10 offset-1 password">
+                            <div class="input-group">
+                                <input type="password" class="form-control" placeholder="contraseña..." aria-label="Username" aria-describedby="basic-addon1">
+                            </div>
+                        </div>
+                    </div>
                 <div class="row">
                     <div class="col-10 offset-1 password">
                         <div class="input-group">
-                            <input type="text" class="form-control" placeholder="contraseña..." aria-label="Username" aria-describedby="basic-addon1">
+                            <input type="password" class="form-control" placeholder="contraseña..." aria-label="Username" aria-describedby="basic-addon1">
                         </div>
                         <button type="submit" class="btn btn-warning btn-block" onclick="showPerfilPage()">INICIAR SESIÓN</button>
                     </div>
                 </div>
+                
                 <div class="row forgot-text-row">
                     <div class="col-10 offset-1">
                         <a class="a-login" href="">¿Olvidaste tu contraseña?</a>
@@ -50,7 +58,9 @@
                 </div>
                 <div class="row register">
                     <div class="col-10 offset-1">
-                        <h6>¿No tienes cuenta? <a href="" class="a-register" onclick="showRegisterPage()">REGISTRATE</a></h6>
+                        <h6>¿No tienes cuenta?
+                            <a href="" class="a-register" onclick="showRegisterPage()">REGISTRATE</a>
+                        </h6>
                     </div>
                 </div>
             </div>
@@ -164,15 +174,17 @@
     </script>
 
 
-    <script src="src/app/getResidue.js"></script>
-    <script src="src/app/addBip.js"></script>
-    <script src="src/app/style.js"></script>
-    <script src="src/app/register.js"></script>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
         crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
         crossorigin="anonymous"></script>
+    <script src="src/app/getResidue.js"></script>
+    <script src="src/app/addBip.js"></script>
+    <script src="src/app/style.js"></script>
+    <script src="src/app/register.js"></script>
+    <script src="src/app/routes.js"></script>
 </body>
 
 </html>

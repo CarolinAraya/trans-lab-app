@@ -8,6 +8,7 @@ h1 {
     margin-bottom: 12%
 }
 
+
 .register {
 margin-top: 40px;
 }
@@ -75,6 +76,10 @@ p {
     height: 70%;
 }
 
+.register-none {
+    display: none;
+    }
+    
 
 /* SIDEBAR */
 
