@@ -36,20 +36,20 @@ function showPerfilPage() {
   }
 
   function showRegisterPage() {
-    $('#login-page').hide(); 
-    $('#perfil-page').hide(); 
+    $('#loginRegister').hide(); 
+    $('#logged').hide(); 
     $('#register-page').show();
 }
 
 function showPerfilPage() {
-    $('#login-page').hide(); 
-    $('#perfil-page').show(); 
+    $('#loginRegister').hide(); 
+    $('#logged').show(); 
     $('#register-page').hide();
 }
 
 function showLoginPage() {
-    $('#login-page').show(); 
-    $('#perfil-page').hide(); 
+    $('#loginRegister').show(); 
+    $('#logged').hide(); 
     $('#register-page').hide();
 }
 
