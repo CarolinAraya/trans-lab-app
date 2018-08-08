@@ -19,7 +19,7 @@ getResidueFromApi = () => {
     }).done(data => {
         userBip.bip = data;
         responseContainer.innerHTML = `<h1 class= "residue">${data.saldoTarjeta}</h1>`
-        saveUserBip(userBip);
+        saveUserBip(userBip.bip);
     });
 }
 
@@ -35,8 +35,3 @@ const saveUserBip = () => {
         .ref('userBips/' + newBipKey)
         .set(userBip); //set actualiza el valor en esta dirección
 }
-
-
-
-
-

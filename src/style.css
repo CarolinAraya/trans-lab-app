@@ -212,7 +212,7 @@ h4 {
 }
 
 .btn-get-residue{
-    margin: 0px 0px 38px 0px;
+    margin: 55px 0px 38px 97px;
 }
 
 .input-key-bip{
@@ -220,7 +220,7 @@ h4 {
 }
 
 .total-residue{
-    background-color: #f6a800;
+    background-color: #ffc107;
     margin: 0px 27px;
     height: 116px;
 }
@@ -236,4 +236,5 @@ h4 {
     font-size: 2.5rem;
     text-align: center;
     margin-top: 25px;
+    color: #3e3f41;
 }
