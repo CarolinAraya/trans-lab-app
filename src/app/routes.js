@@ -2,7 +2,7 @@
 function showPerfilPage() {
     $('#getResidueApp').hide();
     $('#perfilApp').show();
-    $('#logged').show();
+    $('#logged').hide();
 
   }
   
