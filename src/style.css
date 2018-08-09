@@ -208,6 +208,15 @@ h4 {
 }
 
 /* Obtener saldo */
+
+.container-result {
+margin-top: 20%;
+}
+
+.add-bips {
+ margin-top: 10%;
+}
+
 .get-residue-section{
     padding: 20px 10px;
 }
