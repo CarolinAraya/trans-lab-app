@@ -2,7 +2,9 @@
 function showPerfilPage() {
     $('#getResidueApp').hide();
     $('#perfilApp').show();
-    $('#logged').hide();
+    $('#logged').show();
+    // $('#sidevar').show();
+    $('#loginRegister').hide();
 
   }
   
@@ -23,16 +25,14 @@ function showPerfilPage() {
     $('#registerPage').show();
 }
 
-function showPerfilPage() {
-    $('#loginRegister').hide(); 
-    $('#logged').show(); 
-    $('#registerPage').hide();
-}
 
 function showLoginPage() {
     $('#loginRegister').show(); 
     $('#logged').hide(); 
     $('#registerPage').hide();
+    $('#sidevar').hide();
+
+
 }
 
  
