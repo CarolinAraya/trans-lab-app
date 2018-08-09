@@ -63,6 +63,7 @@ margin-top: 40px;
 p {
     margin: 0;
     color: #777777;
+    text-align: center;
 }
 
 .panel 
@@ -167,10 +168,10 @@ h6{
 .input-add-bip {
     margin: 15px 28px 11px 19px;
 }
-
+/* 
 .btn-add-bip{
     margin: 20px 88px 0px 74px;
-}
+} */
 
 /* .sidevar-none {
     display: none;
@@ -196,8 +197,9 @@ h6{
 .email-perfil{
     height: 36px;
     background-color: white;
-    /* align-content: center; */
-    margin: 0px -20px 11px 35px;
+    align-content: center;
+    /* margin: 0px -20px 11px 35px; */
+    margin-top: 3%;
 }
 
 .header-trans {
