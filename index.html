@@ -91,36 +91,31 @@
             </nav>
         </div>
         <!-- Obtener Saldo -->
+        <div class="input-group mb-3">
+            <input id="key-bip" class="form-control" type="text" placeholder="Tu código bip...">
+        </div>
         <div class="row">
-            <div class="col-12">
-                <section class="get-residue-section">
-                    <div class="row input-key-bip">
-                        <div class="input-group mb-3">
-                            <input id="key-bip" class="form-control" type="text" placeholder="Tu código bip...">
-                        </div>
-                    </div>
-                    <div class="row">
-                        <select class="custom-select" id="inputGroupSelect01">
-                            <option selected>Bip...</option>
-                            <option value="1">One</option>
-                            <option value="2">Two</option>
-                            <option value="3">Three</option>
-                        </select>
-                    </div>
-                    <div class="row btn-get-residue">
-                        <div>
-                            <input id="button-get-residue" class="btn btn-warning" type="button" onclick="getResidue()" value="VER SALDO">
-                        </div>
-                    </div>
-                </section>
+            <div class="clas-md-6 offset-md-3">
+                <select class="custom-select" id="inputGroupSelect01">
+                    <option selected>Bip...</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                </select>
             </div>
         </div>
-        <div class="total-residue-title">SALDO TOTAL</div>
-        <div class="row total-residue">
-            <div class="col">
-                <div id="response-container"></div>
+        <div class="row btn-get-residue">
+            <div class="col-md-6 offset-3">
+                <input id="button-get-residue" class="btn btn-warning btn-block" type="button" onclick="getResidue()" value="VER SALDO">
             </div>
         </div>
+        <div class="row">
+            <div class="col-6 offset-3">
+                <div class="total-residue-title">SALDO TOTAL</div>
+                <div id="response-container" class="row total-residue"></div>
+            </div>
+        </div>
+
         <!-- Perfil + Agregar tarjeta -->
         <div id="perfilApp" class="perfil-add-bip-none">
             <!-- Perfil -->

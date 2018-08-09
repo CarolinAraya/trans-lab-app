@@ -207,12 +207,14 @@ h4 {
     text-align: center;
 }
 
+/* Obtener saldo */
 .get-residue-section{
     padding: 20px 10px;
 }
 
 .btn-get-residue{
-    margin: 55px 0px 38px 97px;
+    margin: 55px 38px 38px 97px;
+
 }
 
 .input-key-bip{
@@ -221,7 +223,7 @@ h4 {
 
 .total-residue{
     background-color: #ffc107;
-    margin: 0px 27px;
+    margin: 0px 0px;
     height: 116px;
 }
 
@@ -229,7 +231,7 @@ h4 {
     background-color: #3e3f41;
     color: white;
     text-align: center;
-    margin: 0px 27px;
+    margin: 0px 0px;
 }
 
 .residue{
