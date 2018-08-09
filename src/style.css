@@ -50,6 +50,11 @@ margin-top: 40px;
     width: 100vw;
 }
 
+.black {
+    background-color: #3e3f41;
+    
+}
+
 
 .login-page {
     margin-top: 50px;
@@ -168,14 +173,6 @@ h6{
 .input-add-bip {
     margin: 15px 28px 11px 19px;
 }
-/* 
-.btn-add-bip{
-    margin: 20px 88px 0px 74px;
-} */
-
-/* .sidevar-none {
-    display: none;
-} */
 
 .get-residue-none{
     display: none;
@@ -255,3 +252,13 @@ margin-top: 20%;
     margin-top: 25px;
     color: #3e3f41;
 }
+
+/* calcular tarifa */
+
+.head-calculate {
+    margin-top: 5%;
+}
+
+/* .calculate-none {
+    display: none;
+} */
