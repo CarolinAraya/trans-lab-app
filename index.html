@@ -59,7 +59,7 @@
                 <div class="row register">
                     <div class="col-10 offset-1">
                         <h6>¿No tienes cuenta?
-                            <a href="" class="a-register" onclick="showRegisterPage()">REGISTRATE</a>
+                            <a id="registerEvent" href="" class="a-register">REGISTRATE</a>
                         </h6>
                     </div>
                 </div>
@@ -86,6 +86,7 @@
                 <div class="menu_content">
                     <a class="nav-link active a-nav" onclick="showGetResiduePage()">Ver saldo</a>
                     <a class="nav-link a-nav" onclick="showPerfilPage()">Perfil</a>
+                    <a class="nav-link disabled a-nav" onclick="calculate()">Calcular Tarifa</a>
                     <a class="nav-link disabled a-nav" href="#">Home</a>
                 </div>
             </nav>
@@ -160,18 +161,30 @@
             </div>
             <div class="row">
                 <div class="col-md-6 offset-md-3">
-                    <select class="custom-select" id="inputGroupSelect01">
+                    <select class="custom-select select-calculate" id="tariff" onchange="getTariff(event)">
                         <option selected>Tarifa</option>
-                        <option value="1">One</option>
-                        <option value="2">Two</option>
-                        <option value="3">Three</option>
+                        <option value="760">Alta</option>
+                        <option value="680">Media</option>
+                        <option value="630">Baja</option>
                     </select>
-                    <select class="custom-select" id="inputGroupSelect01">
+                    <select class="custom-select select-calculate" id="userBipsSelect" onchange="getBip(event)">
                         <option selected>Tarjeta</option>
-                        <option value="1">One</option>
-                        <option value="2">Two</option>
-                        <option value="3">Three</option>
+                        <option value="">One</option>
+                        <option value="">Two</option>
+                        <option value="">Three</option>
                     </select>
+                </div>
+            </div>
+            <div class="row container-calculate-result">
+                <div class="col-md-6 offset-md-3">
+                    <div class="total-residue-title">COSTO PASAJE</div>
+                    <div id="response-container" class="row total-residue"></div>
+                </div>
+            </div>
+            <div class="row container-calculate-result">
+                <div class="col-md-6 offset-md-3">
+                    <div class="total-residue-title">SALDO FINAL</div>
+                    <div id="response-container" class="row total-residue"></div>
                 </div>
             </div>
         </div>
@@ -201,6 +214,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
         crossorigin="anonymous"></script>
     <script src="src/app/getResidue.js"></script>
+    <script src="src/app/calculate.js"></script>
     <script src="src/app/addBip.js"></script>
     <script src="src/app/style.js"></script>
     <script src="src/app/register.js"></script>

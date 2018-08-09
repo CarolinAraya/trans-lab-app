@@ -213,7 +213,7 @@ h4 {
 /* Obtener saldo */
 
 .container-result {
-margin-top: 20%;
+margin-top: 10%;
 }
 
 .add-bips {
@@ -257,6 +257,18 @@ margin-top: 20%;
 
 .head-calculate {
     margin-top: 5%;
+}
+
+.container-calculate-result { 
+    margin-top: 5%;
+}
+
+.calculate-none {
+    display: none;
+}
+
+.select-calculate{
+    width: 49%;
 }
 
 /* .calculate-none {

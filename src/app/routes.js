@@ -6,12 +6,17 @@ function showPerfilPage() {
     // $('#sidevar').show();
     $('#loginRegister').hide();
 
-  }
-  
-  function showGetResiduePage() {
+}
+
+function showGetResiduePage() {
     $('#perfilApp').hide();
     $('#getResidueApp').show();
-  }
+}
+
+function calculate() {
+    $('#perfilApp').hide();
+    $('#getResidueApp').hide();
+}
 
 /*   function showRegisterPage() {
     //$('#login').hide();
@@ -19,21 +24,20 @@ function showPerfilPage() {
     register();
   } */
 
-  function showRegisterPage() {
+function showRegisterPage() {
     //$('#loginRegister').hide(); 
-   // $('#logged').hide(); 
+    // $('#logged').hide(); 
     $('#registerPage').show();
 }
 
 
 function showLoginPage() {
-    $('#loginRegister').show(); 
-    $('#logged').hide(); 
+    $('#loginRegister').show();
+    $('#logged').hide();
     $('#registerPage').hide();
     $('#sidevar').hide();
 
 
 }
 
- 
- 
+
