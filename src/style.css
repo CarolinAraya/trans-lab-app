@@ -13,6 +13,11 @@ h1 {
 margin-top: 40px;
 }
 
+.register-page {
+    margin-top: 50px;
+    display: none;
+}
+
 .a-register {
     color: #f6a800;
 }
@@ -58,11 +63,6 @@ margin-top: 40px;
 
 .login-page {
     margin-top: 50px;
-}
-
-.register-page {
-    margin-top: 50px;
-    display: none;
 }
 
 p {
@@ -251,6 +251,7 @@ margin-top: 10%;
     text-align: center;
     margin-top: 25px;
     color: #3e3f41;
+    font-family: fantasy;
 }
 
 /* calcular tarifa */

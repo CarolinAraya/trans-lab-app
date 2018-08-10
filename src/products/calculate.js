@@ -43,7 +43,7 @@ const calculateTariff = () => {
 
             totalBalance = balanceFinal - tariffBip;
 
-            finalValueContainer.innerHTML = `<div class= "residue">${"$" + totalBalance}</div>`
+            finalValueContainer.innerHTML = `<p class= "residue">${"$" + totalBalance}</p>`
             return totalBalance;
 
         });
