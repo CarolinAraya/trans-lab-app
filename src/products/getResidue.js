@@ -8,7 +8,7 @@ userBip = {
     bip: null
 }
 
-getResidueSelect = () => {
+getResidueSelectFunction = () => {
 
     tariffBip = event.target.value;
     coincidedBip = null;
