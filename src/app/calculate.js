@@ -16,14 +16,16 @@ function getBip(event) {
 }
 
 const calculateTariff = () => {
-    const getBip = firebase.database().ref('userBips')
-                           .orderByChild("bip/id").equalTo(codeBipSelect)
-                           .limitToFirst(1)
-                           .once("child_added", (snapshot) => {
 
+    getBip;
+    
+   firebase.database().ref('userBips')
+                       .orderByChild("bip/id").equalTo(codeBipSelect)
+                       .limitToLast(1)
+                       .once("child_added", (snapshot) => {
+                            getBip = snapshot.val();
                            });
     
-    console.log(getBip);
 
     /* .equalTo(codeBipSelect)
     .on("child_added", function(snapshot) {
