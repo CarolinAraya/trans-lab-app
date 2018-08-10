@@ -38,6 +38,7 @@ firebase.database().ref('idBips')
         bipContainer.innerHTML += `<div class="bip-code">
                                 <p>${newBip.val().codeBip}</p>    
                                </div>`;
+        selectBipContainer.innerHTML += `<option value="${newBip.val().codeBip}">${newBip.val().codeBip}</option>`;
         getResidueSelect.innerHTML += `<option value="${newBip.val().codeBip}">${newBip.val().codeBip}</option>`;
 
     });
