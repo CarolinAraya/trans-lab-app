@@ -86,7 +86,7 @@
                 <div class="menu_content">
                     <a class="nav-link active a-nav" onclick="showGetResiduePage()">Ver saldo</a>
                     <a class="nav-link a-nav" onclick="showPerfilPage()">Perfil</a>
-                    <a class="nav-link disabled a-nav" onclick="calculate()">Calcular Tarifa</a>
+                    <a class="nav-link disabled a-nav" onclick="calculateRoute()">Calcular Tarifa</a>
                     <a class="nav-link disabled a-nav" href="#">Home</a>
                 </div>
             </nav>
@@ -153,7 +153,7 @@
         </div>
 
         <!-- Calcular tarifa -->
-        <div id="calculate calculate-none">
+        <div id="calculate" class="calculate-none">
             <div class="row head-calculate">
                 <div class="col-md-6 offset-md-3 input-group mb-3">
                     <input type="text" class="form-control" placeholder="Numero tarjeta" aria-label="Username" aria-describedby="basic-addon1">
@@ -169,7 +169,12 @@
                     </select>
                     <select class="custom-select select-calculate" id="userBipsSelect" onchange="getBip(event)">
                         <option selected>Tarjeta</option>
-                        </select>
+                    </select>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 offset-md-3">
+                    <input id="button-add-bip" class="btn btn-warning btn-block " type="button" onclick=" calculateTariff()" value="CALCULAR TARIFA">
                 </div>
             </div>
             <div class="row container-calculate-result">

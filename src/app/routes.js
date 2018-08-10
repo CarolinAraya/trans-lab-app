@@ -13,9 +13,11 @@ function showGetResiduePage() {
     $('#getResidueApp').show();
 }
 
-function calculate() {
+function calculateRoute() {
     $('#perfilApp').hide();
     $('#getResidueApp').hide();
+    $('#calculate').show();
+
 }
 
 /*   function showRegisterPage() {
