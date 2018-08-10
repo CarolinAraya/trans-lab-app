@@ -17,22 +17,16 @@ function getBip(event) {
 
 const calculateTariff = () => {
 
-    getBip;
-    
+     bip = null;
+
    firebase.database().ref('userBips')
                        .orderByChild("bip/id").equalTo(codeBipSelect)
                        .limitToLast(1)
                        .once("child_added", (snapshot) => {
-                            getBip = snapshot.val();
-                           });
-    
-
-    /* .equalTo(codeBipSelect)
-    .on("child_added", function(snapshot) {
-        console.log(snapshot.key);
-      }); */
+                        
+                        console.log(snapshot.val());
+                        bip = snapshot.val();
+                        console.log(bip.bip.saldoTarjeta);
+                    });
+                           
 }
-/* 
-firebase.database().ref('userBip/bip.val().codeBip')
-    .isEqual(rootRef.child(codeBipSelect))
- */
