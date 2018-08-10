@@ -7,7 +7,7 @@ function getTariff(event) {
 
     tariffBip = event.target.value;
     
-    passageContainer.innerHTML = `<div>${ "$" + tariffBip}</div>`;
+    passageContainer.innerHTML = `<div class= "residue">${ "$" + tariffBip}</div>`;
 
     return tariffBip;
 }
