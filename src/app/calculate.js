@@ -17,7 +17,7 @@ function getBip(event) {
 
 const calculateTariff = () => {
 
-     bip = null;
+     bipBalance = null;
 
    firebase.database().ref('userBips')
                        .orderByChild("bip/id").equalTo(codeBipSelect)
@@ -25,8 +25,7 @@ const calculateTariff = () => {
                        .once("child_added", (snapshot) => {
                         
                         console.log(snapshot.val());
-                        bip = snapshot.val();
-                        console.log(bip.bip.saldoTarjeta);
+                        bipBalance = snapshot.val();
                     });
                            
 }
