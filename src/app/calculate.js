@@ -1,9 +1,13 @@
+passageContainer = document.getElementById("passage-container");
+
 let tariffBip = "";
 let codeBipSelect = "";
 
 function getTariff(event) {
 
     tariffBip = event.target.value;
+    
+    passageContainer.innerHTML = `<div>${ "$" + tariffBip}</div>`;
 
     return tariffBip;
 }
@@ -32,8 +36,11 @@ const calculateTariff = () => {
                         nuevovalor = "";
                         balance = bipValue.replace(patron, nuevovalor);
                         console.log(balance);
+                        patron = ".";
+                        nuevovalor = "";
+                        balanceFinal  = balance.replace(patron, nuevovalor); 
 
-                        totalBalance = balance - tariffBip; 
+                        totalBalance = balanceFinal - tariffBip; 
 
                         return totalBalance;
 
