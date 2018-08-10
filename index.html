@@ -97,11 +97,8 @@
                 <div class="col-md-6 offset-md-3">
                     <div class="input-group mb-3">
                         <input id="key-bip" class="form-control" type="text" placeholder="Tu código bip...">
-                        <select>
+                        <select id=getResidueBipSelect onchange="getResidueSelect(event)">
                             <option selected>Mis bip</option>
-                            <option value="1">12345678</option>
-                            <option value="2">Two</option>
-                            <option value="3">Three</option>
                         </select>
                     </div>
                     <input id="button-get-residue" class="btn btn-warning btn-block" type="button" onclick="getResidue()" value="VER SALDO">

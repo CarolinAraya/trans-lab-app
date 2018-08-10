@@ -2,6 +2,8 @@ const codeBipInput = document.getElementById("add-bip");
 const addBipButton = document.getElementById("button-add-bip");
 const containerBip = document.getElementById("containerBips");
 const selectBipContainer = document.getElementById("userBipsSelect");
+const getResidueSelect = document.getElementById("getResidueBipSelect");
+
 
 let codeBip;
 
@@ -31,9 +33,11 @@ const saveBipFirebase = () => {
 firebase.database().ref('idBips')
     .on('child_added', (newBip) => {
         const bipContainer = document.createElement('div');
+
         containerBips.appendChild(bipContainer)
         bipContainer.innerHTML += `<div class="bip-code">
                                 <p>${newBip.val().codeBip}</p>    
-                               </div>`; 
-        selectBipContainer.innerHTML += `<option value="${newBip.val().codeBip}">${newBip.val().codeBip}</option>`
+                               </div>`;
+        getResidueSelect.innerHTML += `<option value="${newBip.val().codeBip}">${newBip.val().codeBip}</option>`;
+
     });
