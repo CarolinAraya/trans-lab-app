@@ -1,6 +1,5 @@
 //add bip
 const codeBipInput = document.getElementById("add-bip");
-const containerBip = document.getElementById("containerBips");
 const selectBipContainer = document.getElementById("userBipsSelect");
 
 //calculate tariff
@@ -28,14 +27,14 @@ const cleanResidueFromData = () => {
 
     patron = "$";
     newValue = "";
-    
+
     residue = residueFromData.replace(patron, newValue);
 
     domFunction(residue);
 }
 
-const domFunction = () => {
+const domFunction = (residue) => {
 
-    responseContainer.innerHTML = `<h1 class= "residue">${data.saldoTarjeta}</h1>`
+    containerBips.innerHTML = `<h1 class= "residue">${"$" + residue}</h1>`;
 
 }
