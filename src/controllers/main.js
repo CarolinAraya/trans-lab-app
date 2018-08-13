@@ -16,10 +16,20 @@ let residueFromData = "";
 
 const addBip = () => {
 
-    codeBip = codeBipInput.value;
+    codeBip = codeBipInput.value || bipKeyInput.value;
 
     getResidueFromApi(codeBip);// save future in local storage
 
+    /* const bipContainer = document.createElement('div');
+
+    containerBips.appendChild(bipContainer)
+    bipContainer.innerHTML += `<div class="bip-code">
+                                <p>${codeBip}</p>    
+                               </div>`; */
+
+   /*  var factorial = function fac(n) { return n < 2 ? 1 : n * fac(n - 1) };
+
+    print(factorial(3)); */
 
 }
 
@@ -30,11 +40,5 @@ const cleanResidueFromData = () => {
 
     residue = residueFromData.replace(patron, newValue);
 
-    domFunction(residue);
 }
 
-const domFunction = (residue) => {
-
-    containerBips.innerHTML = `<h1 class= "residue">${"$" + residue}</h1>`;
-
-}
