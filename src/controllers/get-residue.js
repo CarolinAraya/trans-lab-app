@@ -11,12 +11,3 @@ const responseContainer = document.getElementById("response-container");
 
 
 //getResidueFromApi(codeBip);
-
-const cleanResidueFromData = () => {
-
-    patron = "$";
-    newValue = "";
-
-    residue = residueFromData.replace(patron, newValue);
-
-}
