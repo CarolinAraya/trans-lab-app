@@ -3,7 +3,6 @@ const codeBipInput = document.getElementById("add-bip");
 const selectBipContainer = document.getElementById("userBipsSelect");
 
 let residue = "";
-let residueFromData = "";
 
 const myBip = {
     codeBip: null,
@@ -11,7 +10,7 @@ const myBip = {
 };
 
 const addBip = () => {
-    
+
     codeInput = codeBipInput.value;
 
     myBip.codeBip = codeInput;
