@@ -10,22 +10,16 @@ const myBip = {
     key: null
 };
 
-const addBip = () => {//Agrega id tarjeta y guarda en Firebase
-
+const addBip = () => {
+    
     codeInput = codeBipInput.value;
 
     myBip.codeBip = codeInput;
 
-    const bipContainer = document.createElement('div');
-
-    containerBips.appendChild(bipContainer)
-    bipContainer.innerHTML += `<div class="bip-code">
-                                <p>${codeInput}</p>    
-                               </div>`; 
-
     saveBipFirebase(myBip);
-
 }
+
+
 
 
 
