@@ -1,6 +1,6 @@
 
 
-getBipAmountFromApi = (codeBip, callback) => { //getBipAmountFromApi(code)
+getBipAmountFromApi = (codeBip, callback) => { 
    
     $.ajax({
         url: `http://bip-servicio.herokuapp.com/api/v1/solicitudes.json?bip=${codeBip}`
@@ -10,10 +10,3 @@ getBipAmountFromApi = (codeBip, callback) => { //getBipAmountFromApi(code)
 }
 
 
- //function getBipAmountFromApi(code, callback)
-                                    //{
-                                    //(Ajax llamando a la api).success((data) => {
-                                        //hacer lo que hay que 
-                                        //callback();
-                                        //});
-                                        //}
