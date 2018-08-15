@@ -1,16 +1,25 @@
-tariffBip = "";
 
-const tariffInput = () => {
+const tariffCalculationClick = () => {
 
-    bipCalculateTariff = inputCode.value;
+    let bipCard = inputCode.value;
+    let tariff = selectTariff.value;
 
-    getBipAmountFromApi(bipCalculateTariff, (amount) => {
+    if (tariff > 0 && bipCard > 0) {
 
-        let tariff = selectTariff.value;
+        passageContainer.innerHTML = `<div class= "residue">${"$" + tariff}</div>`;
 
-        finalValueContainer.innerHTML = `<p class= "residue">${"$" + (amount - (tariff))}</p>`
+        getBipAmountFromApi(bipCard, (amount) => {
 
-    });
+            finalValueContainer.innerHTML = `<p class= "residue">${"$" + (amount - (tariff))}</p>`
+
+        });
+    }
+    else {
+
+        passageContainer.innerHTML = "";
+        finalValueContainer.innerHTML = "";
+    }
+
 }
 
 const tariffSelectionChanged = (event) => {
