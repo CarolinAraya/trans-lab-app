@@ -159,13 +159,13 @@
             <div class="row">
                 <div class="col-md-6 offset-md-3">
                     <select class="custom-select select-calculate" id="selectTariff" onchange="printTariff(event)">
-                        <option selected>Tarifa</option>
+                        <option selected value="0">Tarifa</option>
                         <option value="760">Alta</option>
                         <option value="680">Media</option>
                         <option value="630">Baja</option>
                     </select>
-                    <select class="custom-select select-calculate" id="userBipsSelect" onchange="getBip(event)">
-                        <option selected>Tarjeta</option>
+                    <select class="custom-select select-calculate" id="userBipsSelect" onchange="userBipsSelectionChanged(event)">
+                        <option selected value="0">Tarjeta</option>
                     </select>
                 </div>
             </div>
