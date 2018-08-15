@@ -96,12 +96,12 @@
             <div class="row add-bips">
                 <div class="col-md-6 offset-md-3">
                     <div class="input-group mb-3">
-                        <input id="bipKeyInput" class="form-control" type="text" placeholder="Tu código bip...">
-                        <select id=getResidueBipSelect onchange="getResidueSelectFunction(event)">
-                            <option selected>Mis bip</option>
+                        <input id="bipCodeInput" class="form-control" type="text" placeholder="Tu código bip...">
+                        <select id=getAmountBipSelect onchange="bipAmountSelectionChanged(event)">
+                            <option selected value="0">Mis bip</option>
                         </select>
                     </div>
-                    <input id="button-get-residue" class="btn btn-warning btn-block" type="button" onclick="getResidueInput()" value="VER SALDO">
+                    <input id="button-get-residue" class="btn btn-warning btn-block" type="button" onclick="getAmountBipClick()" value="VER SALDO">
                 </div>
             </div>
             <div class="row container-result">

@@ -34,12 +34,15 @@ const userBipsSelectionChanged = (event) => {
     if (bipCard > 0) {
 
     inputCode.value = bipCard;
+    inputCode.readOnly = true;
 
         tariffCalculationClick();
 
     }
     else{
+        inputCode.value = "";
         passageContainer.innerHTML = "";
         finalValueContainer.innerHTML = "";
+        inputCode.readOnly = false;
     }
 }

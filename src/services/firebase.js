@@ -23,6 +23,6 @@ firebase.database().ref('idBips')
                                </div>`;
 
         userBipsSelect.innerHTML += `<option value="${newBip.val().codeBip}">${newBip.val().codeBip}</option>`;
-        getResidueBipSelect.innerHTML += `<option value="${newBip.val().codeBip}">${newBip.val().codeBip}</option>`;
+        getAmountBipSelect.innerHTML += `<option value="${newBip.val().codeBip}">${newBip.val().codeBip}</option>`;
     });
 
