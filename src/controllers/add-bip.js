@@ -1,5 +1,3 @@
-//add bip
-const codeBipInput = document.getElementById("add-bip");
 
 const myBip = {
     codeBip: null,

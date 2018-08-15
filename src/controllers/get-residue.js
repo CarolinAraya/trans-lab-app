@@ -1,8 +1,3 @@
-//get residue
-const form = document.getElementById("get-residue-bip");
-const bipKeyInput = document.getElementById("key-bip");
-const responseContainer = document.getElementById("response-container");
-
 
 const getResidueInput = () => {
 

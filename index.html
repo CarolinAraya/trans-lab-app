@@ -96,7 +96,7 @@
             <div class="row add-bips">
                 <div class="col-md-6 offset-md-3">
                     <div class="input-group mb-3">
-                        <input id="key-bip" class="form-control" type="text" placeholder="Tu código bip...">
+                        <input id="bipKeyInput" class="form-control" type="text" placeholder="Tu código bip...">
                         <select id=getResidueBipSelect onchange="getResidueSelectFunction(event)">
                             <option selected>Mis bip</option>
                         </select>
@@ -107,7 +107,7 @@
             <div class="row container-result">
                 <div class="col-md-6 offset-md-3">
                     <div class="total-residue-title">SALDO TOTAL</div>
-                    <div id="response-container" class="row total-residue"></div>
+                    <div id="responseContainer" class="row total-residue"></div>
                 </div>
             </div>
         </div>
@@ -131,7 +131,7 @@
             <div class="row input-add-bip">
                 <div class="col-md-6 offset-md-3">
                     <div class="input-group mb-3">
-                        <input id="add-bip" class="form-control" type="text" placeholder="Bip a ingresar...">
+                        <input id="codeBipInput" class="form-control" type="text" placeholder="Bip a ingresar...">
                     </div>
                 </div>
             </div>
@@ -153,12 +153,12 @@
         <div id="calculate" class="calculate-none">
             <div class="row head-calculate">
                 <div class="col-md-6 offset-md-3 input-group mb-3">
-                    <input id="input-code" type="text" class="form-control" placeholder="Numero tarjeta" aria-label="Username" aria-describedby="basic-addon1">
+                    <input id="inputCode" type="text" class="form-control" placeholder="Numero tarjeta" aria-label="Username" aria-describedby="basic-addon1">
                 </div>
             </div>
             <div class="row">
                 <div class="col-md-6 offset-md-3">
-                    <select class="custom-select select-calculate" id="tariff" onchange="getTariff(event)">
+                    <select class="custom-select select-calculate" id="selectTariff" onchange="printTariff(event)">
                         <option selected>Tarifa</option>
                         <option value="760">Alta</option>
                         <option value="680">Media</option>
@@ -177,13 +177,13 @@
             <div class="row container-calculate-result">
                 <div class="col-md-6 offset-md-3">
                     <div class="total-residue-title">COSTO PASAJE</div>
-                    <div id="passage-container" class="row total-residue"></div>
+                    <div id="passageContainer" class="row total-residue"></div>
                 </div>
             </div>
             <div class="row container-calculate-result">
                 <div class="col-md-6 offset-md-3">
                     <div class="total-residue-title">SALDO FINAL</div>
-                    <div id="final-value-container" class="row total-residue"></div>
+                    <div id="finalValueContainer" class="row total-residue"></div>
                 </div>
             </div>
         </div>

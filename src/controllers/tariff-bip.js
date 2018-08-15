@@ -1,9 +1,3 @@
-//calculate tariff
-passageContainer = document.getElementById("passage-container");
-finalValueContainer = document.getElementById("final-value-container");
-inputCode = document.getElementById("input-code");
-selectTariff = document.getElementById("tariff");
-
 
 const tariffInput = () => {
 
@@ -18,7 +12,7 @@ const tariffInput = () => {
     });
 }
 
-function getTariff(event) {
+function printTariff(event) {
 
     tariffBip = event.target.value;
 
