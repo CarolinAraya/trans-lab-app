@@ -9,7 +9,6 @@ const saveBipFirebase = () => {
     return firebase.database()
         .ref('idBips/' + newBipKey)
         .set(myBip); //set actualiza el valor en esta dirección
-
         
 }
 

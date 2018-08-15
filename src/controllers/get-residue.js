@@ -1,24 +1,19 @@
-
-//calculate tariff
-passageContainer = document.getElementById("passage-container");
-finalValueContainer = document.getElementById("final-value-container");
-inputTariff = document.getElementById("input-tariff");
 //get residue
 const form = document.getElementById("get-residue-bip");
 const bipKeyInput = document.getElementById("key-bip");
 const responseContainer = document.getElementById("response-container");
 
 
-residueFromData = "";
+let residueFromData = "";
 
 const getResidueInput = () => {
 
     bipGetResidue = bipKeyInput.value;
 
-    getResidueFromApi(bipGetResidue);
+    getBipAmountFromApi(bipGetResidue, (amount) => {
 
-    responseContainer.innerHTML = `<h1 class= "residue">${"$" + residueFromData}</h1>`;
-
+        responseContainer.innerHTML = `<h1 class= "residue">${"$" + amount}</h1>`;
+    });
 }
 
 
