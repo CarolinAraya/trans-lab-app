@@ -9,10 +9,10 @@ const saveBipFirebase = () => {
     return firebase.database()
         .ref('idBips/' + newBipKey)
         .set(myBip); //set actualiza el valor en esta dirección
-        
+
 }
 
-    firebase.database().ref('idBips')
+firebase.database().ref('idBips')
     .on('child_added', (newBip) => {
 
         const bipContainer = document.createElement('div');
@@ -21,4 +21,8 @@ const saveBipFirebase = () => {
         bipContainer.innerHTML += `<div class="bip-code">
                                 <p>${newBip.val().codeBip}</p>    
                                </div>`;
+
+        userBipsSelect.innerHTML += `<option value="${newBip.val().codeBip}">${newBip.val().codeBip}</option>`;
+        getResidueBipSelect.innerHTML += `<option value="${newBip.val().codeBip}">${newBip.val().codeBip}</option>`;
     });
+

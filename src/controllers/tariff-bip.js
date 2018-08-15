@@ -4,7 +4,6 @@ finalValueContainer = document.getElementById("final-value-container");
 inputCode = document.getElementById("input-code");
 selectTariff = document.getElementById("tariff");
 
-let codeBipSelect = "";
 
 const tariffInput = () => {
 
@@ -17,15 +16,6 @@ const tariffInput = () => {
         finalValueContainer.innerHTML = `<p class= "residue">${"$" + (amount - (tariff))}</p>`
 
     });
-}
-
-const printTotal = (residue) => {
-
-
-
-    return totalBalance;
-
-
 }
 
 function getTariff(event) {
