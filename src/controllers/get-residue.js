@@ -4,8 +4,6 @@ const bipKeyInput = document.getElementById("key-bip");
 const responseContainer = document.getElementById("response-container");
 
 
-let residueFromData = "";
-
 const getResidueInput = () => {
 
     bipGetResidue = bipKeyInput.value;
