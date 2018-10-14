@@ -8,6 +8,10 @@ h1 {
     margin-bottom: 12%
 }
 
+.welcome {
+    color: white;
+}
+
 
 .register {
 margin-top: 40px;
@@ -41,7 +45,7 @@ margin-top: 40px;
 
 .form-control {
     border: 0px solid #ced4da;
-    border-radius: .0rem;
+    border-radius: 5px;
     padding: 9px;
 }
 
@@ -69,6 +73,12 @@ p {
     margin: 0;
     color: #777777;
     text-align: center;
+    font-weight: 500;
+    background-color: lightgoldenrodyellow;
+}
+
+.ingresar {
+    box-shadow: 0 0 0 0 !important;
 }
 
 .panel 
@@ -166,9 +176,12 @@ h6{
     text-align: center;
 } 
 .btn-warning {
-    color: #777777;
+    color:#585c60;;
     background-color: #f6a800;
     border-color: #f6a800;
+    font-weight: 700;
+    box-shadow: 2px 6px 9px -2px #888888;
+    border-radius: 34px;
 }
 .input-add-bip {
     margin: 15px 28px 11px 19px;
