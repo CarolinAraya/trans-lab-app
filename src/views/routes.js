@@ -5,6 +5,7 @@ function showPerfilPage() {
     $('#logged').show();
     // $('#sidevar').show();
     $('#loginRegister').hide();
+    $('#calculate').hide();
 
 }
 
