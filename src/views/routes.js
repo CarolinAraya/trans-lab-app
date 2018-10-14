@@ -11,6 +11,7 @@ function showPerfilPage() {
 function showGetResiduePage() {
     $('#perfilApp').hide();
     $('#getResidueApp').show();
+    $('#calculate').hide();
 }
 
 function calculateRoute() {
